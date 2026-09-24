@@ -1,0 +1,10 @@
+.PHONY: test lint typecheck
+
+test:
+	python3 -m pytest -q
+
+lint:
+	python3 -m ruff check .
+
+typecheck:
+	python3 -m mypy app
